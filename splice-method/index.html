@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice Method</title>
+</head>
+<body>
+    <Script type="text/javascript">
+        // cars Array
+        var carsArray1 = ['Tesla', 'Toyota', 'BMW'];
+        var carsArray2 = ['Honda', 'Ford', 'Porsche', 'RR'];
+
+
+        // Add 1 items at the starting of cars array
+        // Show carsArray1 result in console
+        // Answer will be [ 'Suzuki', 'Tesla', 'Toyota', 'BMW' ]
+        carsArray1.splice(0,0, 'Suzuki');
+        console.log(carsArray1);
+
+
+        // Add 2 items in cars array at 2nd and 3rd position
+        // Show carsArray2 result in console
+        // Answer will be [ 'Honda', 'Ford', 'Suzuki', 'Nissan', 'Porsche', 'RR' ]
+        carsArray2.splice(2,0, 'Suzuki', 'Nissan')
+        console.log(carsArray2);
+    </Script>
+</body>
+</html>
